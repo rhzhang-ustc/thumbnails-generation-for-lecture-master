@@ -3,14 +3,14 @@
 Generate qualified thumbnails for lectures using pretrained CLIP.  Frames are cleaned before sending into the feature extraction model, which is inspired by [1]. An Image classification model is added [2] to filter out those uninformative frames. The model uses the method of clustering  in feature space in order to find the best moments, then generates thumbnails that can best demonstrate the key idea while maintaining the beautifulness. 
 
 ## File Structure
+thumbnails-generation-for-lecture
 
---thumbnails-generation-for-lecture
-  --ckpt
-    --epoch=8.ckpt
-  --code
-  --data
-    --lecture_video
-    --lecture_thumbnails
+* ckpt
+  * epoch=8.ckpt
+* code
+* data
+  * lecture_video
+  * lecture_thumbnails
 
 where the ckpt is the pretrained weights for image classifier. You can download ckpt as guided in [2].
 
